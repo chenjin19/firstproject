@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE person [
+ 	<!--子元素出现的位置必须一致， 默认出现一次, 
+ 	如果指定？ 表示出现 一次或0次
+ 	如果指定* 表示出现0次或n次
+ 	如果指定+ 表示 至少出现一次
+ 	#PCDATA表示子元素是字符元素-->
+	<!ELEMENT person (age+,name,sex,tall,contact+)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT age (#PCDATA)>
+	<!ELEMENT sex (#PCDATA)>
+	<!ELEMENT tall (#PCDATA)>
+	<!ELEMENT contact (telephone, mobile, qq)>
+	<!ELEMENT telephone (#PCDATA)>
+	<!ELEMENT mobile (#PCDATA)>
+	<!ELEMENT qq (#PCDATA)>
+	<!ATTLIST person id CDATA #REQUIRED>
+]>
+
+<person id="1001">
+    <age>23</age>
+	<name>张三</name>	
+	<sex>男</sex>
+	<tall>1.75</tall>
+	<contact>
+		<telephone>0731-8355998</telephone>
+		<mobile>17773488663</mobile>
+		<qq>4136707076</qq>
+	</contact>	
+	<contact>
+		<telephone>0743-8355998</telephone>
+		<mobile>17773488663</mobile>
+		<qq>4136707076</qq>
+	</contact>
+</person>

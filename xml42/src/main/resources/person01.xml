@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE persons SYSTEM "person.dtd">
+
+<persons>
+	<person id="A1001" copyright="op">
+		<age>23</age>
+		<name>张三</name>
+		<sex>男</sex>
+		<tall>1.75</tall>
+		<contact>
+			<telephone>8355998</telephone>
+			<mobile>17773488663</mobile>
+			<qq>4136707076</qq>
+		</contact>
+		<partern pid="B10001" />
+	</person>
+	
+	<person id="A1002">
+		<age>23</age>
+		<name>张三</name>
+		<sex>男</sex>
+		<tall>1.75</tall>
+		<contact>
+			<telephone>8355998</telephone>
+			<mobile>17773488663</mobile>
+			<qq>4136707076</qq>
+		</contact>
+		<partern pid="B10002" />
+	</person>
+</persons>

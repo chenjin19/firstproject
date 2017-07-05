@@ -1,0 +1,21 @@
+<!--子元素出现的位置必须一致， 默认出现一次, 
+ 	如果指定？ 表示出现 一次或0次
+ 	如果指定* 表示出现0次或n次
+ 	如果指定+ 表示 至少出现一次
+ 	#PCDATA表示子元素是字符元素-->
+<!ELEMENT persons (person+)>
+<!ELEMENT person (age,name,sex,tall,contact, partern+)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT sex (#PCDATA)>
+<!ELEMENT tall (#PCDATA)>
+<!ELEMENT contact (telephone,mobile,qq)>
+<!ELEMENT telephone (#PCDATA)>
+<!ELEMENT mobile (#PCDATA)>
+<!ELEMENT qq (#PCDATA)>
+<!ELEMENT partern EMPTY>
+
+<!--定义属性类型为ID时，属性值不能是数值类型-->
+<!ATTLIST person id ID #REQUIRED>
+<!ATTLIST partern pid ID #IMPLIED>
+<!ATTLIST person copyright CDATA "@">
