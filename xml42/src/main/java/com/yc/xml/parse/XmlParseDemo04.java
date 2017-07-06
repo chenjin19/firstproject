@@ -5,5 +5,6 @@ public class XmlParseDemo04 {
 		System.out.println("hello World");
 		System.out.println("hello World");
 		System.out.println("hello jp");
+		System.out.println("hello yc");
 	}
 }
