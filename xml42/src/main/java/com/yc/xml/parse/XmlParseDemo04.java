@@ -4,6 +4,7 @@ public class XmlParseDemo04 {
 	public static void main(String[] args) {
 		System.out.println("hello World");
 		System.out.println("hello World");
+		System.out.println("hello jp");
 		System.out.println("hello yc");
 		System.out.println("");
 	}
